@@ -1,0 +1,49 @@
+import math
+
+
+while True:
+    num = input('Enter number: ')
+    if num == "done":
+        break
+    try:
+        num = float(num)
+    except:
+        print("invalid input")
+    operators = input("Enter Operator: ")
+    if operators == "done":
+        break
+    num1 = input("Enter number: ")
+    if num1 == "done":
+        break
+    try:
+        num1 = float(num1)
+    except:
+        print("invalid input!")
+
+
+    if operators == "-":
+        sum = num - num1
+        print(sum)
+    elif operators == "+":
+        sum = num + num1
+        print(sum)
+    elif operators == "*":
+        sum = num * num1
+        print(sum)
+    elif operators == "/":
+        sum = num / num1
+        print(sum)
+    elif operators == "//":
+        sum = num // num1
+        print(sum)
+    elif operators == "%":
+        sum = num % num1
+        print(sum)
+    elif operators == "^":
+        sum = pow(num, 2)
+        print(sum)
+    elif operators == "!":
+        sum = math.sqrt(num)
+        print(sum)
+    else:
+        print("invalid input!")
