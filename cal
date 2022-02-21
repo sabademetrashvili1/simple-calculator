@@ -1,49 +1,156 @@
 import math
 
-
+# function is working until you turn it off
 while True:
-    num = input('Enter number: ')
-    if num == "done":
-        break
-    try:
-        num = float(num)
-    except:
-        print("invalid input")
+    # Operator input if you Enter done function break
     operators = input("Enter Operator: ")
     if operators == "done":
         break
-    num1 = input("Enter number: ")
-    if num1 == "done":
-        break
-    try:
-        num1 = float(num1)
-    except:
-        print("invalid input!")
-
 
     if operators == "-":
+        num = input('Enter number: ')
+        if num == "done":
+            break
+        try:
+            num = float(num)
+        except:
+            print("invalid input")
+        # enter second number
+        num1 = input("Enter number: ")
+        if num1 == "done":
+            break
+        try:
+            num1 = float(num1)
+        except:
+            print("invalid input!")
+        print("num - num1")
         sum = num - num1
-        print(sum)
+        print("%g - %g = %g" % (num, num1, sum))
     elif operators == "+":
+        num = input('Enter number: ')
+        if num == "done":
+            break
+        try:
+            num = float(num)
+        except:
+            print("invalid input!")
+        num1 = input("Enter number: ")
+        if num1 == "done":
+            break
+        try:
+            num1 = float(num1)
+        except:
+            print("invalid input!")
+        print("num + num1")
         sum = num + num1
-        print(sum)
+        print("%g + %g = %g" % (num, num1, sum))
     elif operators == "*":
+        num = input('Enter number: ')
+        if num == "done":
+            break
+        try:
+            num = float(num)
+        except:
+            print("invalid input")
+        num1 = input("Enter number: ")
+        if num1 == "done":
+            break
+        try:
+            num1 = float(num1)
+        except:
+            print("invalid input!")
+        print("num * num1")
         sum = num * num1
-        print(sum)
+        print("%g * %g = %g" % (num, num1, sum))
     elif operators == "/":
+        num = input('Enter number: ')
+        if num == "done":
+            break
+        try:
+            num = float(num)
+        except:
+            print("invalid input")
+        num1 = input("Enter number: ")
+        if num1 == "done":
+            break
+        try:
+            num1 = float(num1)
+        except:
+            print("invalid input!")
+        print("num / num1")
         sum = num / num1
-        print(sum)
+        print("%g / %g = %g" % (num, num1, sum))
     elif operators == "//":
+        num = input('Enter number: ')
+        if num == "done":
+            break
+        try:
+            num = float(num)
+        except:
+            print("invalid input")
+        num1 = input("Enter number: ")
+        if num1 == "done":
+            break
+        try:
+            num1 = float(num1)
+        except:
+            print("invalid input!")
+        print("num // num1")
         sum = num // num1
-        print(sum)
+        print("%g // %g = %g" % (num, num1, sum))
     elif operators == "%":
-        sum = num % num1
-        print(sum)
+        num = input('Enter number: ')
+        if num == "done":
+            break
+        try:
+            num = float(num)
+        except:
+            print("invalid input")
+        num1 = input("Enter number: ")
+        if num1 == "done":
+            break
+        try:
+            num1 = float(num1)
+        except:
+            print("invalid input!")
+        print("num % num1")
+        sum = (num / 100) * num1
+        print("%g " % (num) + "% " + "%g = %g" % (num1, sum))
     elif operators == "^":
-        sum = pow(num, 2)
-        print(sum)
+        num = input('Enter number: ')
+        if num == "done":
+            break
+        try:
+            num = float(num)
+        except:
+            print("invalid input")
+        num1 = input("Enter number: ")
+        if num1 == "done":
+            break
+        try:
+            num1 = float(num1)
+        except:
+            print("invalid input!")
+        print("num ^ num1")
+        sum = pow(num, num1)
+        print("%g ^ %g = %g" % (num, num1, sum))
     elif operators == "!":
+        num = input('Enter number: ')
+        if num == "done":
+            break
+        try:
+            num = float(num)
+        except:
+            print("invalid input")
+        num1 = input("Enter number: ")
+        if num1 == "done":
+            break
+        try:
+            num1 = float(num1)
+        except:
+            print("invalid input!")
         sum = math.sqrt(num)
         print(sum)
     else:
         print("invalid input!")
+
